@@ -28,6 +28,10 @@ body {
   margin-inline: auto;
 }
 
+.text-white {
+  color: var(--white);
+}
+
 h1,
 .h1 {
   font-size: 60px;
@@ -79,14 +83,36 @@ button {
   font-size: 13px;
   line-height: 1.6;
   font-weight: 500;
-  padding: 17px 40px;
+  padding: 17px 49px;
   transform: skew(-10deg);
   transition: all 300ms ease-in-out;
+}
+.btn-text {
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 .btn-header {
   background-color: var(--white);
   color: var(--dark-btn);
+  padding: 17px 40px;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+  transform: skew(-10deg);
+  transition: all 300ms ease-in-out;
 }
 
 .btn-header:hover {

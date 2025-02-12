@@ -1,7 +1,9 @@
 header {
-  position: sticky;
+  position: fixed;
   left: 0;
   top: 0;
+  width: 100%;
+  z-index: 999;
 }
 /* Top Bar */
 .top-bar {
@@ -155,5 +157,15 @@ header {
   .btn-header:hover {
     color: var(--white);
     background-color: var(--primary);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    position: static;
+  }
+  .menu-and-logo {
+    padding-top: 77px;
+    padding-bottom: 10px;
   }
 }

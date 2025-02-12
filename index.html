@@ -64,7 +64,7 @@
                             <li><a href="javascript:void(0);" class="logo-in-text">Log Into <strong>Your Nest</strong></a></li>
                         </ul>
                         <div>
-                            <a href="javascript:void(0);" class="btn btn-header">Get In Touch</a>
+                            <a href="javascript:void(0);" class="btn-header">Get In Touch</a>
                         </div>
                     </div>
 
@@ -77,6 +77,17 @@
     <!-- hero-banner start -->
     <section class="hero-banner">
         <div class="container">
+            <div class="hero-content-wrapper">
+                <span class="caption">WELCOME TO THE HIVE</span>
+                <h1><strong>Transforming</strong> working cultures to <strong>deliver results </strong>that matter</h1>
+                <div class="hero-btn-wrap">
+                    <a href="javascript:void(0);" class="btn btn-primary">WHAT WE DO</a>
+                    <a href="javascript:void(0);" class="btn-text">WHAT WE DO</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="./assests/images/section/hero-banner.jpg" alt="hero-banner">
         </div>
     </section>
     <!-- hero-banner end -->
@@ -84,6 +95,10 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
+    var $headerHeight = $('header').innerHeight() + 'px';
+    $("body").css("--headerHeight", $headerHeight);
+
+
     function headerScript() {
         var $menu = $('header').find('.nav-menu');
         var $header = $('header');
