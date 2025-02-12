@@ -1,0 +1,159 @@
+header {
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+/* Top Bar */
+.top-bar {
+  background-color: var(--secondary);
+  padding-block: 12px;
+}
+
+.top-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.social-icon {
+  display: inline-block;
+}
+
+.social-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.log-into a {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--white);
+  letter-spacing: 1.2;
+}
+
+/* Top bar end */
+
+.menu-and-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 29px;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 239px;
+  aspect-ratio: 1/0;
+}
+
+.logo-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-and-btn-wrapper {
+  display: flex;
+}
+
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.nav-menu ul li a {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--white);
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+.nav-menu ul li:not(:nth-of-type(8)) a:hover {
+  color: var(--primary);
+}
+
+.nav-btn {
+  display: none;
+}
+
+.nav-menu ul li a.logo-in-text {
+  display: none;
+}
+
+.dark-logo {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .menu-and-btn-wrapper {
+    flex-direction: column;
+    row-gap: 42px;
+  }
+  .light-logo {
+    display: none;
+  }
+
+  .dark-logo {
+    display: block;
+  }
+  .top-bar {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  .logo-in-text {
+    display: block;
+  }
+  .nav-menu ul li {
+    width: 100%;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    row-gap: 54px;
+  }
+  .nav-menu {
+    width: 100%;
+    padding-top: 117px;
+  }
+
+  .logo-nav-wrapper {
+    width: 100%;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+
+  .menu-and-logo {
+    flex-direction: column;
+  }
+
+  .nav-menu ul li a.logo-in-text {
+    display: inline-block;
+    color: #ed6c4f;
+  }
+
+  .nav-menu ul li a {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-btn);
+  }
+
+  .btn-header {
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+
+  .btn-header:hover {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+}
