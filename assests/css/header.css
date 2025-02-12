@@ -42,9 +42,7 @@ header {
 
 .menu-and-logo {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 29px;
 }
 
 .logo img {
@@ -75,6 +73,8 @@ header {
   color: var(--white);
   display: inline-block;
   transition: all 0.5s ease-in-out;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 .nav-menu ul li:not(:nth-of-type(8)) a:hover {
   color: var(--primary);
@@ -124,6 +124,7 @@ header {
   .nav-menu {
     width: 100%;
     padding-top: 117px;
+    height: calc(100vh - var(--headerHeight));
   }
 
   .logo-nav-wrapper {
@@ -158,14 +159,8 @@ header {
     color: var(--white);
     background-color: var(--primary);
   }
-}
 
-@media only screen and (max-width: 767px) {
-  header {
-    position: static;
-  }
-  .menu-and-logo {
-    padding-top: 77px;
-    padding-bottom: 10px;
+  .fake-header {
+    height: var(--headerHeight);
   }
 }
