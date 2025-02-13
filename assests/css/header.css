@@ -1,166 +1,157 @@
 header {
   position: fixed;
-  left: 0;
   top: 0;
-  width: 100%;
+  left: 0;
   z-index: 999;
-}
-/* Top Bar */
-.top-bar {
-  background-color: var(--secondary);
-  padding-block: 12px;
-}
-
-.top-bar-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.social-icon {
-  display: inline-block;
-}
-
-.social-icon svg {
-  width: 15px;
-  height: 15px;
-}
-
-.log-into a {
-  font-size: 12px;
-  line-height: 1.6;
-  color: var(--white);
-  letter-spacing: 1.2;
-}
-
-/* Top bar end */
-
-.menu-and-logo {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo img {
   width: 100%;
-  max-width: 239px;
-  aspect-ratio: 1/0;
+  height: auto;
 }
 
+.logo-nav-wrapper a {
+  display: block;
+  max-width: 200px;
+}
+
+.logo-nav-wrapper a img {
+  width: 100%;
+  height: auto;
+}
+
+.header-main-wrapper {
+  padding-top: 34px;
+}
 .logo-nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu-and-btn-wrapper {
-  display: flex;
-}
-
-.nav-menu ul {
-  display: flex;
-  align-items: center;
-  gap: 38px;
-}
-
-.nav-menu ul li a {
+.menu-items li:not(:last-child) a {
   font-size: 13px;
-  line-height: 1.6;
   color: var(--white);
-  display: inline-block;
-  transition: all 0.5s ease-in-out;
-  text-transform: capitalize;
   font-weight: 500;
+  line-height: 1.5;
 }
-.nav-menu ul li:not(:nth-of-type(8)) a:hover {
+.menu-items ul li a {
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-items ul li a:hover {
   color: var(--primary);
 }
 
-.nav-btn {
-  display: none;
-}
-
-.nav-menu ul li a.logo-in-text {
-  display: none;
-}
-
-.dark-logo {
-  display: none;
-}
-
-@media only screen and (max-width: 1023px) {
-  .menu-and-btn-wrapper {
-    flex-direction: column;
-    row-gap: 42px;
-  }
-  .light-logo {
+@media only screen and (min-width: 768px) {
+  .text-log-info {
     display: none;
   }
 
-  .dark-logo {
-    display: block;
+  .header-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-items ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-items ul li:not(:first-child) {
+    margin-left: 34px;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+  /* Top Bar */
+  .header-top-bar {
+    padding-block: 12px;
+    background-color: var(--secondary);
   }
   .top-bar {
-    display: none;
-  }
-  .nav-menu {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .logo-in-text {
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+
+  .social-icons a {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+
+  .social-icons a img {
     display: block;
+    width: 16px;
+    height: 16px;
   }
-  .nav-menu ul li {
+
+  .log-text a {
+    color: var(--white);
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  /* Top Bar End */
+  .header-btn-wrapper .btn-secondary {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-items {
+    position: fixed;
     width: 100%;
+    height: 100vh;
+    background-color: var(--skin);
+    left: 0;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+    padding-inline: 20px;
   }
-  .nav-menu ul {
-    flex-direction: column;
-    row-gap: 54px;
+
+  header.meno-open .menu-items {
+    top: 0;
   }
-  .nav-menu {
-    width: 100%;
+
+  .header-top-bar {
+    display: none;
+  }
+  .menu-items ul {
     padding-top: 117px;
-    height: calc(100vh - var(--headerHeight));
   }
 
-  .logo-nav-wrapper {
-    width: 100%;
+  .logo-nav-wrapper.light {
+    padding-top: 34px;
   }
 
-  .nav-btn {
-    display: block;
-  }
-
-  .menu-and-logo {
-    flex-direction: column;
-  }
-
-  .nav-menu ul li a.logo-in-text {
-    display: inline-block;
-    color: #ed6c4f;
-  }
-
-  .nav-menu ul li a {
+  .menu-items li:not(:last-child) a {
     font-size: 24px;
-    font-weight: 700;
     color: var(--dark-btn);
+    font-weight: 700;
   }
 
-  .btn-header {
-    background-color: var(--secondary);
-    color: var(--white);
+  .menu-items li a.text-log-info {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: var(--primary);
   }
 
-  .btn-header:hover {
-    color: var(--white);
-    background-color: var(--primary);
+  .menu-items li:not(:last-child) {
+    margin-bottom: 55px;
   }
 
-  .fake-header {
-    height: var(--headerHeight);
+  .header-btn-wrapper .btn-header {
+    display: none;
   }
 }

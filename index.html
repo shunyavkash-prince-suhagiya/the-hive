@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/css/app.css">
+</head>
+
+<body style="background-color: var(--black);">
+    <script src="./assests/js/main.js"></script>
+</body>
+<!-- Header Start -->
+<header>
+    <div class="header-top-bar">
+        <div class="container">
+            <div class="top-bar">
+                <div class="social-icons">
+                    <a href="javascript">
+                        <img src="./assests/images/icons/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="javascript">
+                        <img src="./assests/images/icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="javascript">
+                        <img src="./assests/images/icons/linkden.svg" alt="linkden">
+                    </a>
+                    <a href="javascript">
+                        <img src="./assests/images/icons/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+                <div class="log-text">
+                    <a href="javascript:void(0);">Log Into <strong>Your Nest</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header-main-wrapper">
+            <div class="logo-nav-wrapper">
+                <a href="javascript:void(0);">
+                    <img src="./assests/images/logos/brand-logo.svg" alt="brand-logo">
+                </a>
+                <div class="nav-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="22" viewBox="0 0 39 22">
+                        <g id="Group_2636" data-name="Group 2636" transform="translate(-319 -86)">
+                            <rect id="Rectangle_878" data-name="Rectangle 878" width="39" height="2" transform="translate(319 86)" />
+                            <rect id="Rectangle_879" data-name="Rectangle 879" width="39" height="2" transform="translate(319 96)" />
+                            <rect id="Rectangle_880" data-name="Rectangle 880" width="39" height="2" transform="translate(319 106)" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="menu-items">
+                <div class="logo-nav-wrapper light">
+                    <a href="javascript:void(0);">
+                        <img src="./assests/images/logos/dark-brand-logo.svg" alt="brand-logo">
+                    </a>
+                    <div class="nav-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+                            <g id="Group_931" data-name="Group 931" transform="translate(-1148 -140.32)">
+                                <circle id="Ellipse_25" data-name="Ellipse 25" cx="25.5" cy="25.5" r="25.5" transform="translate(1148 140.32)" fill="#ed6c4f" />
+                                <g id="Group_364" data-name="Group 364" transform="translate(1165.471 157.471)">
+                                    <rect id="Rectangle_35" data-name="Rectangle 35" width="22.133" height="1.844" transform="translate(0 15.651) rotate(-45)" fill="#fff" />
+                                    <rect id="Rectangle_36" data-name="Rectangle 36" width="22.133" height="1.844" transform="translate(15.651 16.955) rotate(-135)" fill="#fff" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">Home</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">About</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Service</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Contact</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="text-log-info">Log Into <strong>Your Nest</strong></a>
+                    </li>
+                    <li class="header-btn-wrapper">
+                        <a href="javascript:void(0);" class="btn-header">What we Do</a>
+                        <a href="javascript:void(0);" class="btn btn-secondary">GET IN TOUCH</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var $header = $('header');
+        $('body').css('--headerHeight', $header.innerHeight() + "px");
+        $('.nav-bar').click(function () {
+            $('header').toggleClass('meno-open');
+        })
+    });
+</script>
+
+</html>
