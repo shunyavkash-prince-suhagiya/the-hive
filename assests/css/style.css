@@ -80,7 +80,7 @@ button {
   line-height: 1.6;
   font-weight: 500;
   padding: 17px 49px;
-  transform: skew(-10deg);
+  clip-path: polygon(9px 0%, 100% 0%, calc(100% - 9px) 100%, 0% 100%);
   transition: all 300ms ease-in-out;
 }
 .btn-text {
@@ -117,7 +117,7 @@ button {
   font-size: 13px;
   line-height: 1.6;
   font-weight: 500;
-  transform: skew(-10deg);
+  clip-path: polygon(9px 0%, 100% 0%, calc(100% - 9px) 100%, 0% 100%);
   transition: all 300ms ease-in-out;
 }
 
@@ -125,10 +125,17 @@ button {
   color: var(--white);
   background-color: var(--primary);
 }
-
-.truncate-2 {
+.truncate-2,
+.truncate-3 {
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* if you only want two lines then set it to 2*/
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.truncate-2 {
+  -webkit-line-clamp: 2;
+}
+
+.truncate-3 {
+  -webkit-line-clamp: 3;
 }
