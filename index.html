@@ -5,10 +5,11 @@
     <title>Document</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assests/css/app.css">
 </head>
 
-<body style="background-color: var(--black);">
+<body>
     <script src="./assests/js/main.js"></script>
 </body>
 <!-- Header Start -->
@@ -40,7 +41,8 @@
         <div class="header-main-wrapper">
             <div class="logo-nav-wrapper">
                 <a href="javascript:void(0);">
-                    <img src="./assests/images/logos/brand-logo.svg" alt="brand-logo">
+                    <img src="./assests/images/logos/brand-logo.svg" class="light-brand-logo" alt="brand-logo">
+                    <img src="./assests/images/logos/dark-brand-logo.svg" class="dark-brand-logo" alt="brand-logo">
                 </a>
                 <div class="nav-bar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="39" height="22" viewBox="0 0 39 22">
@@ -95,8 +97,341 @@
     </div>
 </header>
 <!-- Header End -->
+
+<section class="hero-banner">
+    <div class="container">
+        <div class="hero-content">
+            <span class="caption">WELCOME TO THE HIVE</span>
+            <h1><strong>Transforming</strong> working cultures to <strong>deliver results</strong> that matter</h1>
+            <div class="hero-btn-wrapper">
+                <a href="javascript:void(0);" class="btn btn-primary">WHAT WE DO</a>
+                <a href="javascript:void(0);" class="btn btn-primary mobile">WHAT WE DO</a>
+                <a href="javascript:void(0);" class="btn-text">WHAT WE DO</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="./assests/images/section/hero-banner.jpg" alt="hero-banner">
+    </div>
+</section>
+
+<!-- Hero End -->
+
+<section class="transformation-journey">
+    <div class="container">
+        <div class="journey-content">
+            <span class="caption">WHO WE ARE</span>
+            <h2>Has your transformation journey <strong>lost clarity?</strong></h2>
+            <p>At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+            <a href="javascript:void(0);" class="btn btn-secondary">READ MORE</a>
+        </div>
+        <div class="what-we-do">
+            <div class="what-we-header">
+                <h3>What we do</h3>
+                <a href="javascript:void(0);" class="btn btn-secondary">VIEW ALL</a>
+            </div>
+            <div class="what-we-cards">
+                <a href="javascript:void(0);" class="we-card">
+                    <div class="we-card-img">
+                        <img src="./assests/images/section/problem-solving.png.png" alt="problem-solving.png">
+                    </div>
+                    <div class="we-card-content">
+                        <h4>Problem Solving</h4>
+                        <span class="we-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                                <path d="M5 12l14 0"></path>
+                                <path d="M15 16l4 -4"></path>
+                                <path d="M15 8l4 4"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="we-card">
+                    <div class="we-card-img">
+                        <img src="./assests/images/section/communication.png" alt="communication">
+                    </div>
+                    <div class="we-card-content">
+                        <h4>Communication</h4>
+                        <span class="we-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                                <path d="M5 12l14 0"></path>
+                                <path d="M15 16l4 -4"></path>
+                                <path d="M15 8l4 4"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="we-card">
+                    <div class="we-card-img">
+                        <img src="./assests/images/section/leadership.png" alt="leadership">
+                    </div>
+                    <div class="we-card-content">
+                        <h4>Leadership</h4>
+                        <span class="we-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                                <path d="M5 12l14 0"></path>
+                                <path d="M15 16l4 -4"></path>
+                                <path d="M15 8l4 4"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Thre box with Icon -->
+</section>
+
+<!-- Testimonial -->
+<section class="testimonial">
+    <div class="container">
+        <div class="testimonial-slider splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="testimonial-slide">
+                            <span class="caption">WHAT OTHERS SAY ABOUT US</span>
+                            <h2>“This is by far the best training I’ve ever had. We are now speaking one common language across teams.”</h2>
+                            <span class="author-name"><strong>Jenny Holland</strong>, Regional Sales Manager</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-slide">
+                            <span class="caption">WHAT OTHERS SAY ABOUT US</span>
+                            <h2>“This is by far the best training I’ve ever had. We are now speaking one common language across teams.”</h2>
+                            <span class="author-name"><strong>Jenny Holland</strong>, Regional Sales Manager</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-slide">
+                            <span class="caption">WHAT OTHERS SAY ABOUT US</span>
+                            <h2>“This is by far the best training I’ve ever had. We are now speaking one common language across teams.”</h2>
+                            <span class="author-name"><strong>Jenny Holland</strong>, Regional Sales Manager</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Top Line Process -->
+<section class="line-process-section">
+    <div class="container">
+        <div>
+            <h2>Our Top Line <strong>Process</strong></h2>
+            <div class="line-process-grid">
+                <div class="line-process-item">
+                    <div class="process-item-img">
+                        <img src="./assests/images/section/insight.svg" alt="insight">
+                    </div>
+                    <h4>Insight</h4>
+                    <p class="process-content-line">Facts focus a strategy for change.</p>
+                </div>
+                <div class="line-process-item">
+                    <div class="process-item-img">
+                        <img src="./assests/images/section/action.svg" alt="action">
+                    </div>
+                    <h4>Action</h4>
+                    <p class="process-content-line">Tools transform ideas and attitudes.</p>
+                </div>
+                <div class="line-process-item">
+                    <div class="process-item-img">
+                        <img src="./assests/images/section/impact.svg" alt="impact">
+                    </div>
+                    <h4>Impact</h4>
+                    <p class="process-content-line">Cultures create results that last.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Resources  -->
+<section class="our-resources">
+    <div class="container">
+        <div class="resources-heading">
+            <h2>Our Resources</h2>
+        </div>
+        <div class="our-resources-slider splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                    <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path>
+                    </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                    <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources01.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources03.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources01.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources02.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources01.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources01.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources03.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources01.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources02.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="resources-card">
+                            <div class="resources-card-img">
+                                <img src="./assests/images/section/our-resources01.png" alt="our-resources01">
+                            </div>
+                            <div class="resources-content">
+                                <span>GENERAL</span>
+                                <h5>Transforming working cultures</h5>
+                                <p class="truncate-2">At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step process grounded in empathy, collaboration and purposeful leadership.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-cards">
+
+        </div>
+    </div>
+</footer>
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
+    var testimonialSlider = new Splide('.testimonial-slider', {
+        type: 'loop',
+        drag: 'free',
+        autoplay: true,
+        arrows: false,
+    });
+    testimonialSlider.mount();
+
+    var SlideResources = new Splide('.our-resources-slider', {
+        focus: 'start',
+        perPage: 4,
+        breakpoints: {
+            1023: {
+                perPage: 3,
+            },
+            767: {
+                perPage: 2,
+            },
+            640: {
+                perPage: 1,
+            },
+        }
+    });
+    SlideResources.mount();
+
+    // Header Script
     $(document).ready(function () {
         var $header = $('header');
         $('body').css('--headerHeight', $header.innerHeight() + "px");
@@ -104,6 +439,8 @@
             $('header').toggleClass('meno-open');
         })
     });
+
+
 </script>
 
 </html>
