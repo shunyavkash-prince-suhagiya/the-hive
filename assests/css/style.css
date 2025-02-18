@@ -9,6 +9,10 @@
   --dark-btn: #000b18;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
